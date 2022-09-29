@@ -8,7 +8,12 @@ body{
    border-radius: 10%;
 }
 nav img{
-    width: 8%;
+    width: 20%;
     border-radius: 50%;
+    margin-left: 70%;
   
+}
+.d-flex{
+    display: flex;
+    align-items: center;
 }

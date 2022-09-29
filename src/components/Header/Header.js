@@ -3,8 +3,9 @@ import logo from '../../images/fitness-logo-vector-symbol-icon-260nw-1926906863.
 import './Header.css';
 const Header = () => {
     return (
-       <nav className='header'>
-         <img src={logo} alt="" />
+       <nav className='header d-flex'>
+         <div><img src={logo} alt="" /></div>
+         <div><h2>Fitness club</h2></div>
        </nav>
     );
 };
