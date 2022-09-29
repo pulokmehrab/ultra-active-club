@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../Card/Card';
+import QandA from '../QandA/QandA';
 import Siderbar from '../Sidebar/Siderbar';
 
 const HomePage = () => {
@@ -25,20 +26,22 @@ const HomePage = () => {
 
     return (
         <div>
-            <h2>
-                homw pAGE
-            </h2>
+            
             <div className='container'>
                 <div className='row'>
                     <div className='col-lg-6'>
+                    <h2 className='text-center'>
+                        HomePage
+                    </h2>
                         <div className='row'>
                             {data.map(dataValue => <Card key={dataValue.id} card={dataValue} addTime={addTime} /> )}
                         </div>
                     </div>
                     <div className='col-lg-6'>
-                        <h3>side section</h3>
+                        <h3 className='text-center'>Side section</h3>
                         <Siderbar timeNeed={timeNeed}/>
                     </div>
+                    <QandA/>
                 </div>
             </div>
         </div>

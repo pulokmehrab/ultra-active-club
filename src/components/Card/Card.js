@@ -8,7 +8,7 @@ const Card = ({card , addTime}) => {
                 <div className="card-body">
                     <h5 clas
                     sName="card-title">{card.name}</h5>
-                    <p className="card-text">{card.time}</p>
+                    <p className="card-text">Time: {card.time}</p>
                     <button onClick={() => addTime(card.time)}  className="btn btn-primary">Take this</button>
                 </div>
             </div>
