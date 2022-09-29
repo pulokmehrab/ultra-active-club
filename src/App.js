@@ -1,15 +1,17 @@
 import './App.css';
 import Header from './components/Header/Header';
-import Shop from './components/shop/Shop';
+import HomePage from './components/HomePage/HomePage';
+
 function App() {
   return (
     <div className="">
       <Header>
 
       </Header>
-      <Shop>
+      <HomePage>
         
-      </Shop>
+      </HomePage>
+      
       </div>
   );
 }
