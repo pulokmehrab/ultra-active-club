@@ -11,7 +11,7 @@ const shop = () => {
 
            <div className='cartcontainer'>
                <h3>
-                Added to card
+                Added to cart
                </h3>
                </div>
                </div>

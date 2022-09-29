@@ -10,9 +10,7 @@ function App() {
       <Shop>
         
       </Shop>
-
-
-    </div>
+      </div>
   );
 }
 
