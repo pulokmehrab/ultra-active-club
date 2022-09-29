@@ -18,7 +18,7 @@ const HomePage = () => {
         fetching();
     },[]);
 
-    const addTime = () => {
+    const addTime = (data) => {
         const remainigTime = [...timeNeed,data];
         setTimeNeed(remainigTime);
     }
@@ -37,7 +37,7 @@ const HomePage = () => {
                     </div>
                     <div className='col-lg-6'>
                         <h3>side section</h3>
-                        <Siderbar/>
+                        <Siderbar timeNeed={timeNeed}/>
                     </div>
                 </div>
             </div>

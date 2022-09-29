@@ -1,14 +1,15 @@
 import React from 'react';
 
-const Card = ({card}) => {
+const Card = ({card , addTime}) => {
     return (
         <div className='col-lg-6'>
            <div className="card">
                 <img src={card.picture} className="card-img-top" alt="..."/>
                 <div className="card-body">
-                    <h5 className="card-title">{card.name}</h5>
+                    <h5 clas
+                    sName="card-title">{card.name}</h5>
                     <p className="card-text">{card.time}</p>
-                    <a  className="btn btn-primary">Take this</a>
+                    <button onClick={() => addTime(card.time)}  className="btn btn-primary">Take this</button>
                 </div>
             </div>
  

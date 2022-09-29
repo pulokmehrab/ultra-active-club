@@ -1,15 +1,15 @@
 import React from 'react';
 
-const BreakTime = () => {
+const BreakTime = ({firstOne,secondOne,thirdOne,fourthOne,fifthOne, settoBreakTime}) => {
     return (
         <div className='mt-3'>
             <h4 className='text-center'>Breaking Time</h4>
             <div className='card d-flex flex-row align-items-center justify-content-evenly'>
-            <button>5s</button>
-            <button>10s</button>
-            <button>15s</button>
-            <button>25s</button>
-            <button>35s</button>
+            <button onClick={() => settoBreakTime(firstOne)}>{firstOne} s</button>
+            <button onClick={() => settoBreakTime(secondOne)}>{secondOne} s</button>
+            <button onClick={() => settoBreakTime(thirdOne)}>{thirdOne} s</button>
+            <button onClick={() => settoBreakTime(fourthOne)}>{fourthOne} s</button>
+            <button onClick={() => settoBreakTime(fifthOne)}>{fifthOne} s</button>
         </div>
         </div>
     );
